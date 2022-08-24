@@ -3,7 +3,7 @@ describe 'creating bears table' do
     SQLite3::Database.new(':memory:')
   end
 
-  before do
+    before do
     sql = File.read("lib/create.sql")
     db.execute_batch(sql)
   end
